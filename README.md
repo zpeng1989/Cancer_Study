@@ -40,7 +40,7 @@
 ### 免疫细胞分析
 
 - `Immunophenogram` - 癌症中免疫细胞类型的划分。 https://github.com/mui-icbi/Immunophenogram, https://tcia.at/home
-    - Charoentong, Pornpimol, Francesca Finotello, Mihaela Angelova, Clemens Mayer, Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski. “Pan-Cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships and Predictors of Response to Checkpoint Blockade.” BioRxiv, 2016, 056101. - https://tcia.at/ - 癌症中的免疫细胞。使用功能GSEA富集和CIBERSORT进行估计。 Immunophenogram generation: https://github.com/MayerC-imed/Immunophenogram
+    - Charoentong, Pornpimol, Francesca Finotello, Mihaela Angelova, Clemens Mayer, Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski. “Pan-Cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships and Predictors of Response to Checkpoint Blockade.” BioRxiv, 2016, 056101. - https://tcia.at/ - 癌症中的免疫细胞。使用功能GSEA富集和CIBERSORT进行估计。  https://github.com/MayerC-imed/Immunophenogram
 
 - `ImmQuant` - 反向卷积计算免疫谱系. http://csgi.tau.ac.il/ImmQuant/downloads.html
     - Frishberg, Amit, Avital Brodt, Yael Steuerman, and Irit Gat-Viks. “ImmQuant: A User-Friendly Tool for Inferring Immune Cell-Type Composition from Gene-Expression Data.” Bioinformatics 32, no. 24 (December 15, 2016): 3842–43. https://doi.org/10.1093/bioinformatics/btw535.
@@ -107,16 +107,16 @@
     - Györffy, Balazs, Andras Lanczky, Aron C. Eklund, Carsten Denkert, Jan Budczies, Qiyuan Li, and Zoltan Szallasi. “An Online Survival Analysis Tool to Rapidly Assess the Effect of 22,277 Genes on Breast Cancer Prognosis Using Microarray Data of 1,809 Patients.” Breast Cancer Research and Treatment 123, no. 3 (October 2010): 725–31. https://doi.org/10.1007/s10549-009-0674-9.
 
 - `The Human Protein Atlas` - 基因和蛋白质在多种癌症组织、细胞系中的表达数据。简单的单基因搜索，总结组织特异性表达，生存意义。 http://www.proteinatlas.org/
-    - Uhlen, Mathias, Cheng Zhang, Sunjae Lee, Evelina Sjöstedt, Linn Fagerberg, Gholamreza Bidkhori, Rui Benfeitas, et al. “A Pathology Atlas of the Human Cancer Transcriptome.” Science (New York, N.Y.) 357, no. 6352 (August 18, 2017). doi:10.1126/science.aan2507. http://science.sciencemag.org/content/357/6352/eaan2507. Rich downloadable data - tissue-specific gene expression in cancer and normal, isoform expression, protein expression. http://www.proteinatlas.org/about/download. Supplementary material http://science.sciencemag.org/content/suppl/2017/08/16/357.6352.eaan2507.DC1  
+    - Uhlen, Mathias, Cheng Zhang, Sunjae Lee, Evelina Sjöstedt, Linn Fagerberg, Gholamreza Bidkhori, Rui Benfeitas, et al. “A Pathology Atlas of the Human Cancer Transcriptome.” Science (New York, N.Y.) 357, no. 6352 (August 18, 2017). doi:10.1126/science.aan2507. http://science.sciencemag.org/content/357/6352/eaan2507. Rich downloadable data - tissue-specific gene expression in cancer and normal, isoform expression, protein expression. http://www.proteinatlas.org/about/download. http://science.sciencemag.org/content/suppl/2017/08/16/357.6352.eaan2507.DC1  
         - `Table S2` - 在正常组织和癌组织中，每种基因的组织特异性表达概述。 
         - `Table S6` - 生存预后价值的总结，每个基因都有一个简单的“有利/不利”标签。每个工作表对应一个不同的癌症。  
         - `Table S8` - 每个基因的总结，在其中癌症是生存的预后。
 
 - `PRECOG` - 从基因组谱预测临床结果。以基因为中心，快速概述一个基因在所有癌症中的生存效应，KM图。 https://precog.stanford.edu
-    - Gentles, Andrew J., Aaron M. Newman, Chih Long Liu, Scott V. Bratman, Weiguo Feng, Dongkyoon Kim, Viswam S. Nair, et al. “The Prognostic Landscape of Genes and Infiltrating Immune Cells across Human Cancers.” Nature Medicine 21, no. 8 (August 2015): 938–45. https://doi.org/10.1038/nm.3909. - TCGA pan-cancer survival analysis PRECOG, CIBERSORT. 39 cancers. Intro into heterogeneity. Z-score description. Batch effect does not significantly affect z-scores. 2/3 prognostic genes shared across cancers. AutoSOME clustering method
+    - Gentles, Andrew J., Aaron M. Newman, Chih Long Liu, Scott V. Bratman, Weiguo Feng, Dongkyoon Kim, Viswam S. Nair, et al. “The Prognostic Landscape of Genes and Infiltrating Immune Cells across Human Cancers.” Nature Medicine 21, no. 8 (August 2015): 938–45. https://doi.org/10.1038/nm.3909. -TCGA泛癌生存分析PRECOG, CIBERSORT。39种的癌症。包括异质性、z分数等描述，批处理效果对z分数没有显著影响，2/3的癌症预后基因是相同的，常染色体聚类方法等。
 
 - `GEPIA` - TCGA数据的单基因和多基因分析。基因表达在不同肿瘤正常比较，差异表达基因，相关分析，相似基因，生存分析。 http://gepia.cancer-pku.cn/
-    - Zefang Tang et al., “GEPIA: A Web Server for Cancer and Normal Gene Expression Profiling and Interactive Analyses,” Nucleic Acids Research 45, no. W1 (July 3, 2017): W98–102, https://doi.org/10.1093/nar/gkx247. - TCGA and GTEX web interface. Classical analyses - differential expression analysis, profiling plotting, correlation analysis, patient survival analysis, similar gene detection and dimensionality reduction analysis. http://gepia.cancer-pku.cn/
+    - Zefang Tang et al., “GEPIA: A Web Server for Cancer and Normal Gene Expression Profiling and Interactive Analyses,” Nucleic Acids Research 45, no. W1 (July 3, 2017): W98–102, https://doi.org/10.1093/nar/gkx247. - 经典分析-差异表达分析，图谱绘制，相关分析，患者生存分析，相似基因检测和降维分析. http://gepia.cancer-pku.cn/
 - `GEPIA2` -  TCGA分析。癌症subtype-specific分析。八种类型的表达分析，以及附加的癌症亚型分类器和表达比较。用于API访问的Python包。 http://gepia2.cancer-pku.cn
     - Tang, Zefang, Boxi Kang, Chenwei Li, Tianxiang Chen, and Zemin Zhang. “GEPIA2: An Enhanced Web Server for Large-Scale Expression Profiling and Interactive Analysis.” Nucleic Acids Research, May 22, 2019. https://doi.org/10.1093/nar/gkz430.
 
@@ -131,7 +131,7 @@
 ### 查找生存分析最佳分割点
 
 - `KMplotter` - Kaplan Meier绘图仪能够通过18,674个癌症样本评估54,675个基因对生存率的影响。其中包括5143名乳腺癌患者，1816名卵巢癌患者，2437名肺癌患者，364名肝癌患者，1065名胃癌患者，无复发和总体生存数据。miRNA子系统还包括来自20种不同癌症类型的11,456个样本。该工具的主要目的是基于meta分析的生物标志物评估。
-    - Györffy, Balazs, Andras Lanczky, Aron C. Eklund, Carsten Denkert, Jan Budczies, Qiyuan Li, and Zoltan Szallasi. “An Online Survival Analysis Tool to Rapidly Assess the Effect of 22,277 Genes on Breast Cancer Prognosis Using Microarray Data of 1,809 Patients.” Breast Cancer Research and Treatment 123, no. 3 (October 2010): 725–31. https://doi.org/10.1007/s10549-009-0674-9. - cutoff selection for survival by scanning gene expression range.
+    - Györffy, Balazs, Andras Lanczky, Aron C. Eklund, Carsten Denkert, Jan Budczies, Qiyuan Li, and Zoltan Szallasi. “An Online Survival Analysis Tool to Rapidly Assess the Effect of 22,277 Genes on Breast Cancer Prognosis Using Microarray Data of 1,809 Patients.” Breast Cancer Research and Treatment 123, no. 3 (October 2010): 725–31. https://doi.org/10.1007/s10549-009-0674-9. - 通过RNA表达分析最佳分割点；
 
 - `ctree` 自动切断发现和建立一个多元协变量的回归树。 `partykit::ctree()`. 
     - Hothorn, Torsten, Kurt Hornik, and Achim Zeileis. “Ctree: Conditional Inference Trees.” The Comprehensive R Archive Network, 2015, 1–34.
@@ -156,12 +156,12 @@
     - Schlicker, Andreas, Magali Michaut, Rubayte Rahman, and Lodewyk F. A. Wessels. “OncoScape: Exploring the Cancer Aberration Landscape by Genomic Data Fusion.” Scientific Reports 6 (20 2016): 28103. https://doi.org/10.1038/srep28103.
 
 - `data/Bailey_2018_cancer_genes.xlsx` - Table S1, 癌症驱动基因的一致列表
-	- Bailey, Matthew H., Collin Tokheim, Eduard Porta-Pardo, Sohini Sengupta, Denis Bertrand, Amila Weerasinghe, Antonio Colaprico, et al. “Comprehensive Characterization of Cancer Driver Genes and Mutations.” Cell 173, no. 2 (April 5, 2018): 371-385.e18. https://doi.org/10.1016/j.cell.2018.02.060. - Pan-Cancer mutation analysis. Combined use of 26 tools (https://www.cell.com/cell/fulltext/S0092-8674(18)30237-X#secsectitle0075, description of each tool in Methods) on harmonized data. 299 cancer driver genes, >3,400 putative missense driver mutations. Table S6 - excluded TCGA samples.
+	- Bailey, Matthew H., Collin Tokheim, Eduard Porta-Pardo, Sohini Sengupta, Denis Bertrand, Amila Weerasinghe, Antonio Colaprico, et al. “Comprehensive Characterization of Cancer Driver Genes and Mutations.” Cell 173, no. 2 (April 5, 2018): 371-385.e18. https://doi.org/10.1016/j.cell.2018.02.060. - 泛癌肿分析 包括26种软件 (https://www.cell.com/cell/fulltext/S0092-8674(18)30237-X#secsectitle0075, 及使用方法) 299个癌症驱动基因，大于3400个假定的错义驱动突变的分析
 
 - `data/TARGET_db_v3_02142015.xlsx` - TARGET(与基因组驱动治疗相关的肿瘤改变)是一个基因数据库，当癌症发生体细胞改变时，这些基因与临床行为直接相关。靶基因可以预测治疗的反应或耐药性、预后和/或诊断 https://software.broadinstitute.org/cancer/cga/target
 
 - `data/Tokheim_2016_cancer_driver_genes.xlsx` - Dataset S2:用多种方法预测驱动基因
-    - Tokheim, Collin J., Nickolas Papadopoulos, Kenneth W. Kinzler, Bert Vogelstein, and Rachel Karchin. “Evaluating the Evaluation of Cancer Driver Genes.” Proceedings of the National Academy of Sciences 113, no. 50 (December 13, 2016): 14330–35. https://doi.org/10.1073/pnas.1616440113. - 20/20+ machine learning method, ratiometric approach to predict cancer driver genes. Performance comparison of other methods, 20/20+, TUSON, OncodriveFML and MutsigCV are the top performers. https://github.com/KarchinLab/2020plus
+    - Tokheim, Collin J., Nickolas Papadopoulos, Kenneth W. Kinzler, Bert Vogelstein, and Rachel Karchin. “Evaluating the Evaluation of Cancer Driver Genes.” Proceedings of the National Academy of Sciences 113, no. 50 (December 13, 2016): 14330–35. https://doi.org/10.1073/pnas.1616440113. - 20/20+机器学习方法，比率计量学方法预测癌症驱动基因。其他方法的性能比较，20/20+、TUSON、OncodriveFML和MutsigCV表现最好. https://github.com/KarchinLab/2020plus
 
 ## 癌症驱动突变
 
@@ -203,16 +203,16 @@
 - `UCSCXenaTools` - 一个从UCSC Xena数据中心下载和研究数据的R包. CRAN: https://cran.r-project.org/web/packages/UCSCXenaTools/, GitHub: https://github.com/ShixiangWang/UCSCXenaTools, https://shixiangwang.github.io/UCSCXenaTools/
 
 - 乳腺癌全基因组资源，一个门户网站的蛋白质组学，转录组学，基因组学和代谢组学的乳腺癌. 下载 http://www.breastcancerlandscape.org/
-    - Consortia Oslo Breast Cancer Research Consortium (OSBREAC), Henrik J. Johansson, Fabio Socciarelli, Nathaniel M. Vacanti, Mads H. Haugen, Yafeng Zhu, Ioannis Siavelis, et al. “Breast Cancer Quantitative Proteome and Proteogenomic Landscape.” Nature Communications 10, no. 1 (December 2019): 1600. https://doi.org/10.1038/s41467-019-09018-y. - Proteogenomics of breast cancer subtypes. ~10K proteins by LS-MS/MS. 9 samples for each of the five PAM50 subtypes. Protein expression partially recapitulates PAM50 subtypes, their own consensus clustering. High correlation with mRNA, less so for CNV. Correlation of 290 proteins that are FDA-approved drug targets. Online tool, http://www.breastcancerlandscape.org/, supplementary Data 1 has the full protein expression matrix,https://www.nature.com/articles/s41467-019-09018-y#Sec15
+    - Consortia Oslo Breast Cancer Research Consortium (OSBREAC), Henrik J. Johansson, Fabio Socciarelli, Nathaniel M. Vacanti, Mads H. Haugen, Yafeng Zhu, Ioannis Siavelis, et al. “Breast Cancer Quantitative Proteome and Proteogenomic Landscape.” Nature Communications 10, no. 1 (December 2019): 1600. https://doi.org/10.1038/s41467-019-09018-y. - 乳腺癌亚型的蛋白质基因组学。用LS-MS/MS测定~10K蛋白。五个PAM50亚型各9个样本。蛋白质表达部分地概括了PAM50亚型，它们自己的一致聚类。与mRNA相关性高，与CNV相关性低。290种经fda批准的药物靶点蛋白的相关性。在线工具, http://www.breastcancerlandscape.org/, 附录有蛋白质表达数据矩阵,https://www.nature.com/articles/s41467-019-09018-y#Sec15
 
 - `Refine.bio` 将公开可用的pb级生物数据协调为癌症研究人员和AI/ML科学家的现成数据集. https://www.refine.bio/. Documentation, http://docs.refine.bio/en/latest/, GitHub, https://github.com/AlexsLemonade/refinebio.
 
-- Zehir, Ahmet, Ryma Benayed, Ronak H Shah, Aijazuddin Syed, Sumit Middha, Hyunjae R Kim, Preethi Srinivasan, et al. “Mutational Landscape of Metastatic Cancer Revealed from Prospective Clinical Sequencing of 10,000 Patients.” Nature Medicine 23, no. 6 (May 8, 2017): 703–13. https://doi.org/10.1038/nm.4333. - MSK-IMPACT study. 多种癌症样本中341-410基因的深度测序。突变，拷贝数改变，融合。 数据 http://www.cbioportal.org/study?id=msk_impact_2017#summary, downloadable, includes clinical data for survival analysis.
+- Zehir, Ahmet, Ryma Benayed, Ronak H Shah, Aijazuddin Syed, Sumit Middha, Hyunjae R Kim, Preethi Srinivasan, et al. “Mutational Landscape of Metastatic Cancer Revealed from Prospective Clinical Sequencing of 10,000 Patients.” Nature Medicine 23, no. 6 (May 8, 2017): 703–13. https://doi.org/10.1038/nm.4333. - MSK-IMPACT study. 多种癌症样本中341-410基因的深度测序。突变，拷贝数改变，融合。 数据 http://www.cbioportal.org/study?id=msk_impact_2017#summary, downloadable, 包括临床数据.
 
 - Gendoo, Deena M.A., Michael Zon, Vandana Sandhu, Venkata Manem, Natchar Ratanasirigulchai, Gregory M. Chen, Levi Waldron, and Benjamin Haibe-Kains. “MetaGxData: Clinically Annotated Breast, Ovarian and Pancreatic Cancer Datasets and Their Use in Generating a Multi-Cancer Gene Signature,” November 12, 2018. https://doi.org/10.1101/052910. - 包含乳腺癌和卵巢癌数据、矩阵数据和RNA-seq基因表达和临床注释数据在MetaGxData包。用于对所有基因进行全基因组生存分析的脚本。 https://github.com/bhklab/MetaGxData 
 
 - `DepMap` - 大规模RNAi筛选20种癌症501个细胞系的癌症易感基因，shRNA沉默约17000个基因。数据未知: https://depmap.org/portal/download/
-    - Tsherniak, Aviad, Francisca Vazquez, Phil G. Montgomery, Barbara A. Weir, Gregory Kryukov, Glenn S. Cowley, Stanley Gill, et al. “Defining a Cancer Dependency Map.” Cell 170, no. 3 (July 2017): 564-576.e16. https://doi.org/10.1016/j.cell.2017.06.010. [Supplemental tables](https://www.sciencedirect.com/science/article/pii/S0092867417306517?via%3Dihub#app2), `DepMap_TableS3_DependencyCorrelation.csv` - Table S3. Gene Dependency-Dependency Correlations, pairs of genes essential for proliferation/viability. Columns: Gene symbol 1, Gene symbol 2, correlation (r), z_score. [Source](https://ars.els-cdn.com/content/image/1-s2.0-S0092867417306517-mmc3.csv)
+    - Tsherniak, Aviad, Francisca Vazquez, Phil G. Montgomery, Barbara A. Weir, Gregory Kryukov, Glenn S. Cowley, Stanley Gill, et al. “Defining a Cancer Dependency Map.” Cell 170, no. 3 (July 2017): 564-576.e16. https://doi.org/10.1016/j.cell.2017.06.010. [Supplemental tables](https://www.sciencedirect.com/science/article/pii/S0092867417306517?via%3Dihub#app2), `DepMap_TableS3_DependencyCorrelation.csv` - Table S3. 基因依赖关系，对增殖/存活至关重要的一对基因。Columns: Gene symbol 1, Gene symbol 2, correlation (r), z_score. [Source](https://ars.els-cdn.com/content/image/1-s2.0-S0092867417306517-mmc3.csv)
 
 - `CCLE2 data` - 。数据描述:RNA剪接，DNA甲基化，组蛋白修饰，miRNA表达，1072个细胞的RPPA。: https://portals.broadinstitute.org/ccle/data, https://depmap.org/portal/download/
     - Ghandi, Mahmoud, Franklin W. Huang, Judit Jané-Valbuena, Gregory V. Kryukov, Christopher C. Lo, E. Robert McDonald, Jordi Barretina, et al. “Next-Generation Characterization of the Cancer Cell Line Encyclopedia.” Nature, May 8, 2019. https://doi.org/10.1038/s41586-019-1186-3.
