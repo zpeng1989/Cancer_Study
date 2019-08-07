@@ -27,40 +27,39 @@
 
 - `ABSOLUTE` - 从SNPs、CNVs推断肿瘤纯度、倍数。还可检测亚克隆异质性。
     - Carter, Scott L., Kristian Cibulskis, Elena Helman, Aaron McKenna, Hui Shen, Travis Zack, Peter W. Laird, et al. “Absolute Quantification of Somatic DNA Alterations in Human Cancer.” Nature Biotechnology 30, no. 5 (May 2012): 413–21. https://doi.org/10.1038/nbt.2203.
-    - Aran, Dvir, Marina Sirota, and Atul J. Butte. “Systematic Pan-Cancer Analysis of Tumour Purity.” Nature Communications 6, no. 1 (December 2015). https://doi.org/10.1038/ncomms9971. - TCGA肿瘤纯度评估采用四种方法: ESTIMATE, ABSOLUTE, LUMP, IHC, and a median consensus purity estimation. 基因表达与纯度有关，可能影响相关和差异表达检测分析 
-    - `data/ABSOLUTE_scores.xlsx` - Supplementary Data 1: 根据四种方法估计肿瘤纯度，并对所有TCGA样本用现有数据进行一致性分析. [Source](https://media.nature.com/original/nature-assets/ncomms/2015/151204/ncomms9971/extref/ncomms9971-s2.xlsx)
+    - Aran, Dvir, Marina Sirota, and Atul J. Butte. “Systematic Pan-Cancer Analysis of Tumour Purity.” Nature Communications 6, no. 1 (December 2015). https://doi.org/10.1038/ncomms9971. - TCGA肿瘤纯度评估采用四种方法: ESTIMATE, ABSOLUTE, LUMP, IHC, 和中位数一致性进行评估。 基因表达与纯度有关，可能影响相关和差异表达检测分析 - `data/ABSOLUTE_scores.xlsx` - Supplementary Data 1: 根据四种方法估计肿瘤纯度，并对所有TCGA样本用现有数据进行一致性分析. [Source](https://media.nature.com/original/nature-assets/ncomms/2015/151204/ncomms9971/extref/ncomms9971-s2.xlsx)
 
-- `ESTIMATE` (Estimation of STromal and Immune cells in MAlignant Tumor tissues using Expression data) is a tool for predicting tumor purity, and the presence of infiltrating stromal/immune cells in tumor tissues using gene expression data. ESTIMATE algorithm is based on single sample Gene Set Enrichment Analysis and generates three scores: stromal score (that captures the presence of stroma in tumor tissue), immune score (that represents the infiltration of immune cells in tumor tissue), and estimate score (that infers tumor purity). http://bioinformatics.mdanderson.org/main/ESTIMATE:Overview. R package http://bioinformatics.mdanderson.org/estimate/rpackage.html
-    - Yoshihara, Kosuke, Maria Shahmoradgoli, Emmanuel Martínez, Rahulsimham Vegesna, Hoon Kim, Wandaliz Torres-Garcia, Victor Treviño, et al. “Inferring Tumour Purity and Stromal and Immune Cell Admixture from Expression Data.” Nature Communications 4 (2013): 2612. https://doi.org/10.1038/ncomms3612. - ESTIMATE - tumor-stroma purity detection. 141 immune and stromal genes. single-sample GSEA analysis. ESTIMATE score as a combination of immune and stromal scores. [Supplementary data](https://www.nature.com/articles/ncomms3612#supplementary-information).
-- `data/ESTIMATE_signatures.xlsx` - A gene list of stromal and immune signatures. [Source](https://media.nature.com/original/nature-assets/ncomms/2013/131011/ncomms3612/extref/ncomms3612-s2.xlsx)
-- `data/ESTIMATE_scores.xlsx` - A list of stromal, immune, and ESTIMATE scores in TCGA data sets. All cancers, all gene expression plaforms. [Source](https://media.nature.com/original/nature-assets/ncomms/2013/131011/ncomms3612/extref/ncomms3612-s3.xlsx)
+- `ESTIMATE` (利用表达数据估计恶性肿瘤组织中的间质细胞和免疫细胞)是预测肿瘤纯度的工具，利用基因表达数据预测肿瘤组织中是否存在浸润的间质/免疫细胞。评估算法基于单样本基因集富集分析，生成三个分数:间质分数(捕获肿瘤组织中间质的存在)、免疫分数(表示肿瘤组织中免疫细胞的浸润)和评估分数(推断肿瘤纯度)。 http://bioinformatics.mdanderson.org/main/ESTIMATE:Overview. R包 http://bioinformatics.mdanderson.org/estimate/rpackage.html
+    - Yoshihara, Kosuke, Maria Shahmoradgoli, Emmanuel Martínez, Rahulsimham Vegesna, Hoon Kim, Wandaliz Torres-Garcia, Victor Treviño, et al. “Inferring Tumour Purity and Stromal and Immune Cell Admixture from Expression Data.” Nature Communications 4 (2013): 2612. https://doi.org/10.1038/ncomms3612. - ESTIMATE - 肿瘤间质纯度检测。141免疫和间质基因。single-sample GSEA分析。评估得分作为免疫和间质评分的组合。 [Supplementary data](https://www.nature.com/articles/ncomms3612#supplementary-information).
+- `data/ESTIMATE_signatures.xlsx` - 间质和免疫特征的基因列表。 [Source](https://media.nature.com/original/nature-assets/ncomms/2013/131011/ncomms3612/extref/ncomms3612-s2.xlsx)
+- `data/ESTIMATE_scores.xlsx` - TCGA数据集中间质、免疫和评估得分的列表。所有的癌症，所有的基因表达形式。[Source](https://media.nature.com/original/nature-assets/ncomms/2013/131011/ncomms3612/extref/ncomms3612-s3.xlsx)
 
-- `ISOpureR` - Deconvolution of Tumour Profiles to purify tumor samples. Regression-based, uses purified tumor profile to estimate the proportion of tumor samples. Discussion of overfitting due to overparametrization. https://cran.r-project.org/web/packages/ISOpureR/index.html
+- `ISOpureR` - 反卷积策略计算肿瘤轮廓，以提高肿瘤纯度。基于回归的方法，利用纯化的肿瘤剖面来估计肿瘤样本的比例。讨论过参数化引起的过拟合。 https://cran.r-project.org/web/packages/ISOpureR/index.html
     - Quon, Gerald, Syed Haider, Amit G Deshwar, Ang Cui, Paul C Boutros, and Quaid Morris. “Computational Purification of Individual Tumor Gene Expression Profiles Leads to Significant Improvements in Prognostic Prediction.” Genome Medicine 5, no. 3 (2013): 29. https://doi.org/10.1186/gm433.
 
 ### 免疫细胞分析
 
-- `Immunophenogram` - partitioning immune cell types in cancer. https://github.com/mui-icbi/Immunophenogram, https://tcia.at/home
-    - Charoentong, Pornpimol, Francesca Finotello, Mihaela Angelova, Clemens Mayer, Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski. “Pan-Cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships and Predictors of Response to Checkpoint Blockade.” BioRxiv, 2016, 056101. - https://tcia.at/ - immune cells in cancers. Estimated using functional GSEA enrichment, and CIBERSORT. Immunophenogram generation: https://github.com/MayerC-imed/Immunophenogram
+- `Immunophenogram` - 癌症中免疫细胞类型的划分。 https://github.com/mui-icbi/Immunophenogram, https://tcia.at/home
+    - Charoentong, Pornpimol, Francesca Finotello, Mihaela Angelova, Clemens Mayer, Mirjana Efremova, Dietmar Rieder, Hubert Hackl, and Zlatko Trajanoski. “Pan-Cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships and Predictors of Response to Checkpoint Blockade.” BioRxiv, 2016, 056101. - https://tcia.at/ - 癌症中的免疫细胞。使用功能GSEA富集和CIBERSORT进行估计。 Immunophenogram generation: https://github.com/MayerC-imed/Immunophenogram
 
-- `ImmQuant` - Deconvolution of immune cell lineages. http://csgi.tau.ac.il/ImmQuant/downloads.html
+- `ImmQuant` - 反向卷积计算免疫谱系. http://csgi.tau.ac.il/ImmQuant/downloads.html
     - Frishberg, Amit, Avital Brodt, Yael Steuerman, and Irit Gat-Viks. “ImmQuant: A User-Friendly Tool for Inferring Immune Cell-Type Composition from Gene-Expression Data.” Bioinformatics 32, no. 24 (December 15, 2016): 3842–43. https://doi.org/10.1093/bioinformatics/btw535.
 
-- `TIMER` - a resource to estimate the abundance of immune infiltration of six cell types, the effect on survival. Accounting for tumor purity using CHAT R package. Linear regression to estimate immune cell abundance. Macrophage infiltration predicts worse outcome, including BRCA. Signature genes from microarray, merged with RNA-seq using ComBat for batch removal, filtered. All TCGA processed. All data at http://cistrome.org/TIMER/download.html, tool at https://cistrome.shinyapps.io/timer/
+- `TIMER` - 免疫细胞浸润的六种类型，对生存的影响。 使用CHAT R包计算肿瘤纯度。估计免疫细胞丰度的线性回归。 巨噬细胞浸润预示更糟的结果，包括BRCA。合并RNA-seq使用批量删除，过滤所有TCGA处理。数据位置 http://cistrome.org/TIMER/download.html, 工具位置 https://cistrome.shinyapps.io/timer/
     - Li, Bo, Eric Severson, Jean-Christophe Pignon, Haoquan Zhao, Taiwen Li, Jesse Novak, Peng Jiang, et al. “Comprehensive Analyses of Tumor Immunity: Implications for Cancer Immunotherapy.” Genome Biology 17, no. 1 (22 2016): 174. https://doi.org/10.1186/s13059-016-1028-7.
 
 
 ### BRCA
 
-- `TNBCtype` tool to classify triple negative breast cancer samples (microarray gene expression) into six subtypes, http://cbc.mc.vanderbilt.edu/tnbc/index.php
+- `TNBCtype` 分类三阴性乳腺癌样本(微阵列基因表达)分为六个亚型, http://cbc.mc.vanderbilt.edu/tnbc/index.php
 
-- `genefu` R package for PAM50 classification and survival analysis. https://www.bioconductor.org/packages/release/bioc/html/genefu.html
+- `genefu` PAM50 R包分类预测生存https://www.bioconductor.org/packages/release/bioc/html/genefu.html
 
 ### TCGA
 
-- Zhang, Zhuo, Hao Li, Shuai Jiang, Ruijiang Li, Wanying Li, Hebing Chen, and Xiaochen Bo. “A Survey and Evaluation of Web-Based Tools/Databases for Variant Analysis of TCGA Data.” Briefings in Bioinformatics, March 29, 2018. https://doi.org/10.1093/bib/bby023. - The most comprehensive review of TCGA-related tools. Table 3 - List of Web servers and databases. 
+- Zhang, Zhuo, Hao Li, Shuai Jiang, Ruijiang Li, Wanying Li, Hebing Chen, and Xiaochen Bo. “A Survey and Evaluation of Web-Based Tools/Databases for Variant Analysis of TCGA Data.” Briefings in Bioinformatics, March 29, 2018. https://doi.org/10.1093/bib/bby023. - 最全面的tcga相关工具综述。 Table 3 - Web服务器和数据库列表。
 
-- NCI Genomics Data Commons API. https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/ - docs. https://github.com/Bioconductor/GenomicDataCommons - R package
+- NCI基因组数据通用API. https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/ - 文档. https://github.com/Bioconductor/GenomicDataCommons - R 包
     - Shane Wilson, Michael Fitzsimons, Martin Ferguson, Allison Heath, Mark Jensen, Josh Miller, Mark W. Murphy, James Porter, Himanso Sahni, Louis Staudt, Yajing Tang, Zhining Wang, Christine Yu, Junjun Zhang, Vincent Ferretti and Robert L. Grossman. "Developing Cancer Informatics Applications and Tools Using the NCI Genomic Data Commons API." DOI: 10.1158/0008-5472.CAN-17-0598 Published November 2017 http://cancerres.aacrjournals.org/content/77/21/e15
 
 ## 图片分析
