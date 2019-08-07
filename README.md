@@ -18,7 +18,7 @@
 * [数据](#数据)
   * [TCGA](#tcga)
 * [甲基化](#甲基化)
-* [Misc](#misc)
+
 
 ## 工具
 
@@ -64,191 +64,180 @@
 
 ## 图片分析
 
-- `DeepPATH` - Lung cancer image classification using deep convolutional neural network. Classification by tumor type, mutation type. Refs to other image classification studies that use deep learning. GoogleNet inception v3 architecture. Training, validation, testing cohorts (70%, 15%, 15%). Details on image processing. https://github.com/ncoudray/DeepPATH
+- `DeepPATH` - 利用深卷积神经网络对肺癌图像进行分类。按肿瘤类型、突变类型分类。参考其他使用深度学习的图像分类研究。GoogleNet inception v3架构。培训、验证、测试团队(70%、15%、15%)。图像处理的细节。 https://github.com/ncoudray/DeepPATH
     - Coudray, Nicolas, Paolo Santiago Ocampo, Theodore Sakellaropoulos, Navneet Narula, Matija Snuderl, David Fenyö, Andre L. Moreira, Narges Razavian, and Aristotelis Tsirigos. “Classification and Mutation Prediction from Non–Small Cell Lung Cancer Histopathology Images Using Deep Learning.” Nature Medicine 24, no. 10 (October 2018): 1559–67. https://doi.org/10.1038/s41591-018-0177-5.
 
 
-- `IHCount` - IHC-image analysis workflow, https://github.com/mui-icbi/IHCount
+- `IHCount` - IHC-分析软件, https://github.com/mui-icbi/IHCount
 
-- `pathology_learning` - Using traditional machine learning and deep learning methods to predict stuff from TCGA pathology slides. [https://github.com/millett/pathology_learning](https://github.com/millett/pathology_learning)
+- `pathology_learning` - 利用传统的机器学习和深度学习方法对TCGA病理切片进行预测。 [https://github.com/millett/pathology_learning](https://github.com/millett/pathology_learning)
 
 ## 克隆分析
 
-- `Awesome-CancerEvolution` - list of papers and tools for studying cancer evolution. https://github.com/iron-lion/Awesome-CancerEvolution
+- `Awesome-CancerEvolution` - 研究癌症进化的论文和工具列表。 https://github.com/iron-lion/Awesome-CancerEvolution
 
-- `E-scape` - cancer evolution visualization. Timescape - time series analysis, http://bioconductor.org/packages/release/bioc/html/timescape.html, MapScape - spatial distribution,http://bioconductor.org/packages/release/bioc/html/mapscape.html, CellScape - single-cell phylogenetic, http://bioconductor.org/packages/release/bioc/html/cellscape.html
+- `E-scape` - 癌症进化可视化。时间序列分析, http://bioconductor.org/packages/release/bioc/html/timescape.html, MapScape - 空间分布,http://bioconductor.org/packages/release/bioc/html/mapscape.html, CellScape - single-cell 进化, http://bioconductor.org/packages/release/bioc/html/cellscape.html
     - Smith, Maia A., Cydney B. Nielsen, Fong Chun Chan, Andrew McPherson, Andrew Roth, Hossein Farahani, Daniel Machev, Adi Steif, and Sohrab P. Shah. “E-Scape: Interactive Visualization of Single-Cell Phylogenetics and Cancer Evolution.” Nature Methods 14, no. 6 (30 2017): 549–50. https://doi.org/10.1038/nmeth.4303.
 
-- `fishplot` - Create timecourse "fish plots" that show changes in the clonal architecture of tumors. https://github.com/chrisamiller/fishplot
+- `fishplot` - 创建显示肿瘤克隆结构变化的时间进程"fish plots" . https://github.com/chrisamiller/fishplot
 
-- `MACHINA` - Metastatic And Clonal History INtegrative Analysis. https://github.com/raphael-group/machina 
+- `MACHINA` - 转移和克隆史综合分析。 https://github.com/raphael-group/machina 
 
-- `PyClone` - inferring the cellular prevalence of point mutations from deeply sequenced data. http://compbio.bccrc.ca/software/pyclone/
+- `PyClone` - 从深度测序的数据推断点突变的细胞普遍率。 http://compbio.bccrc.ca/software/pyclone/
 
-- `clonevol` R package, Inferring and visualizing clonal evolution in multi-sample cancer sequencing. https://github.com/hdng/clonevol
+- `clonevol` R package, 在多样本癌症测序中推断和可视化克隆进化. https://github.com/hdng/clonevol
     - Dang, H. X., B. S. White, S. M. Foltz, C. A. Miller, J. Luo, R. C. Fields, and C. A. Maher. “ClonEvol: Clonal Ordering and Visualization in Cancer Sequencing.” Annals of Oncology: Official Journal of the European Society for Medical Oncology 28, no. 12 (December 1, 2017): 3076–82. https://doi.org/10.1093/annonc/mdx517.
 
 
-- `SciClone` - number and genetic composition of tumor subclones by analyzing the variant allele frequencies of somatic mutations. Excludes CNV regions. https://github.com/genome/sciclone
+- `SciClone` - 通过分析体细胞突变的变异等位基因频率，分析肿瘤亚克隆的数目和遗传组成。. https://github.com/genome/sciclone
 
-- `ape` - R package, Analyses of Phylogenetics and Evolution, https://cran.r-project.org/web/packages/ape/index.html
+- `ape` - 系统发育和进化分析, https://cran.r-project.org/web/packages/ape/index.html
 
-- `DeconstructSig` - Contribution of known SNP cancer mutation signatures to tumor samples. Data from Alexandrov, COSMIC, others. https://github.com/raerose01/deconstructSigs 
+- `DeconstructSig` - 已知SNP肿瘤突变特征对肿瘤样本的贡献预测克隆。 https://github.com/raerose01/deconstructSigs 
 
 
 
 ## 生存分析
 
-- `cBioPortal` - The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets. OncoPrint mutation plots, differential expression, coexpression, survival. Compare gene expression with copy number variation. http://www.cbioportal.org/
+- `cBioPortal` - 癌症基因组学cBioPortal提供大规模癌症基因组数据集的可视化、分析和下载。OncoPrint突变图，差异表达，共表达，存活。比较基因表达与拷贝数变异。 http://www.cbioportal.org/
 
-- `R2` - Genomics Analysis and Visualization Platform. Gene-centric, survival analysis, collection of preprocessed microarray studies. http://hgserver1.amc.nl/
+- `R2` - 基因组分析可视化平台。以基因为中心，生存分析，预处理RNA微阵列研究的收集. http://hgserver1.amc.nl/
 
-- `KM plotter` - Gene-centric, customizable survival analysis for breast, ovarian, lung, gastric cancers. http://kmplot.com/
+- `KM plotter` - Gene-centric, 可定制的乳腺癌、卵巢癌、肺癌、胃癌的生存分析. http://kmplot.com/
     - Györffy, Balazs, Andras Lanczky, Aron C. Eklund, Carsten Denkert, Jan Budczies, Qiyuan Li, and Zoltan Szallasi. “An Online Survival Analysis Tool to Rapidly Assess the Effect of 22,277 Genes on Breast Cancer Prognosis Using Microarray Data of 1,809 Patients.” Breast Cancer Research and Treatment 123, no. 3 (October 2010): 725–31. https://doi.org/10.1007/s10549-009-0674-9.
 
-- `The Human Protein Atlas` - Gene- and protein expression data in multiple cancer tissues, cell lines. Easy one-gene search, summary of tissue-specific expression, survival significance. http://www.proteinatlas.org/
+- `The Human Protein Atlas` - 基因和蛋白质在多种癌症组织、细胞系中的表达数据。简单的单基因搜索，总结组织特异性表达，生存意义。 http://www.proteinatlas.org/
     - Uhlen, Mathias, Cheng Zhang, Sunjae Lee, Evelina Sjöstedt, Linn Fagerberg, Gholamreza Bidkhori, Rui Benfeitas, et al. “A Pathology Atlas of the Human Cancer Transcriptome.” Science (New York, N.Y.) 357, no. 6352 (August 18, 2017). doi:10.1126/science.aan2507. http://science.sciencemag.org/content/357/6352/eaan2507. Rich downloadable data - tissue-specific gene expression in cancer and normal, isoform expression, protein expression. http://www.proteinatlas.org/about/download. Supplementary material http://science.sciencemag.org/content/suppl/2017/08/16/357.6352.eaan2507.DC1  
-        - `Table S2` - summary of tissue specific expression for each gene, in normal and cancer tissues.  
-        - `Table S6` - summary of survival prognostic value, with a simple "favorable/unfavorable" label for each gene. Each worksheet corresponds to a different cancer.  
-        - `Table S8` - per-gene summary, in which cancers it is prognostic of survival.  
+        - `Table S2` - 在正常组织和癌组织中，每种基因的组织特异性表达概述。 
+        - `Table S6` - 生存预后价值的总结，每个基因都有一个简单的“有利/不利”标签。每个工作表对应一个不同的癌症。  
+        - `Table S8` - 每个基因的总结，在其中癌症是生存的预后。
 
-- `PRECOG` - PREdiction of Clinical Outcomes from Genomic Profiles. Gene-centric, quick overview of survival effect of a gene across all cancers, KM plots. https://precog.stanford.edu
+- `PRECOG` - 从基因组谱预测临床结果。以基因为中心，快速概述一个基因在所有癌症中的生存效应，KM图。 https://precog.stanford.edu
     - Gentles, Andrew J., Aaron M. Newman, Chih Long Liu, Scott V. Bratman, Weiguo Feng, Dongkyoon Kim, Viswam S. Nair, et al. “The Prognostic Landscape of Genes and Infiltrating Immune Cells across Human Cancers.” Nature Medicine 21, no. 8 (August 2015): 938–45. https://doi.org/10.1038/nm.3909. - TCGA pan-cancer survival analysis PRECOG, CIBERSORT. 39 cancers. Intro into heterogeneity. Z-score description. Batch effect does not significantly affect z-scores. 2/3 prognostic genes shared across cancers. AutoSOME clustering method
 
-- `GEPIA` - single- and multiple-gene analyses of TCGA data. Gene expression in different tumor-normal comparisons, differentially expressed genes, correlation analysis, similar genes, survival analysis. http://gepia.cancer-pku.cn/
+- `GEPIA` - TCGA数据的单基因和多基因分析。基因表达在不同肿瘤正常比较，差异表达基因，相关分析，相似基因，生存分析。 http://gepia.cancer-pku.cn/
     - Zefang Tang et al., “GEPIA: A Web Server for Cancer and Normal Gene Expression Profiling and Interactive Analyses,” Nucleic Acids Research 45, no. W1 (July 3, 2017): W98–102, https://doi.org/10.1093/nar/gkx247. - TCGA and GTEX web interface. Classical analyses - differential expression analysis, profiling plotting, correlation analysis, patient survival analysis, similar gene detection and dimensionality reduction analysis. http://gepia.cancer-pku.cn/
-- `GEPIA2` - isoform-level TCGA analysis. Cancer subtype-specific analyses. Eight types of expression analyses, and additional Cancer Subtype Classifier and Expression Comparison. Python package for API access. http://gepia2.cancer-pku.cn
+- `GEPIA2` -  TCGA分析。癌症subtype-specific分析。八种类型的表达分析，以及附加的癌症亚型分类器和表达比较。用于API访问的Python包。 http://gepia2.cancer-pku.cn
     - Tang, Zefang, Boxi Kang, Chenwei Li, Tianxiang Chen, and Zemin Zhang. “GEPIA2: An Enhanced Web Server for Large-Scale Expression Profiling and Interactive Analysis.” Nucleic Acids Research, May 22, 2019. https://doi.org/10.1093/nar/gkz430.
 
 
-
-<!--
-- `PrognoScan`, Gene-centric, survival effect of a gene in cancer studies from GEO. http://dna00.bio.kyutech.ac.jp/PrognoScan/
--->
-
-- `UALCAN` - Gene-centric, tumor-normal expression, survival analusis, TCGA cancers. http://ualcan.path.uab.edu/
+- `UALCAN` - 以基因为中心，肿瘤正常表达，生存分析，TCGA癌症。 http://ualcan.path.uab.edu/
     - Chandrashekar DS, Bashel B, Balasubramanya SAH, Creighton CJ, Rodriguez IP, Chakravarthi BVSK and Varambally S. UALCAN: A portal for facilitating tumor subgroup gene expression and survival analyses. Neoplasia. 2017 Aug;19(8):649-658. doi: 10.1016/j.neo.2017.05.002 [PMID:28732212]
 
-- `Project Betastasis` - Gene-centric, survival analysis, gene expression, select cancer studies. http://www.betastasis.com/
+- `Project Betastasis` - 以基因为中心，生存分析，基因表达，选择癌症研究。 http://www.betastasis.com/
 
-- `OncoLnc` - Gene-centric, survival analysis in any TCGA cancer. http://www.oncolnc.org/
+- `OncoLnc` - 基因中心，任何TCGA癌症的生存分析。 http://www.oncolnc.org/
 
 ### 查找生存分析最佳分割点
 
-- `KMplotter` - the Kaplan Meier plotter is capable to assess the effect of 54,675 genes on survival using 18,674 cancer samples. These include 5,143 breast, 1,816 ovarian, 2,437 lung, 364 liver, 1,065 gastric cancer patients with relapse-free and overall survival data. The miRNA subsystems include additional 11,456 samples from 20 different cancer types. Primary purpose of the tool is a meta-analysis based biomarker assessment.
+- `KMplotter` - Kaplan Meier绘图仪能够通过18,674个癌症样本评估54,675个基因对生存率的影响。其中包括5143名乳腺癌患者，1816名卵巢癌患者，2437名肺癌患者，364名肝癌患者，1065名胃癌患者，无复发和总体生存数据。miRNA子系统还包括来自20种不同癌症类型的11,456个样本。该工具的主要目的是基于meta分析的生物标志物评估。
     - Györffy, Balazs, Andras Lanczky, Aron C. Eklund, Carsten Denkert, Jan Budczies, Qiyuan Li, and Zoltan Szallasi. “An Online Survival Analysis Tool to Rapidly Assess the Effect of 22,277 Genes on Breast Cancer Prognosis Using Microarray Data of 1,809 Patients.” Breast Cancer Research and Treatment 123, no. 3 (October 2010): 725–31. https://doi.org/10.1007/s10549-009-0674-9. - cutoff selection for survival by scanning gene expression range.
 
-- `ctree` function for automatic cutoff finding and building a regression tree out of multiple covariates. `partykit::ctree()`. 
+- `ctree` 自动切断发现和建立一个多元协变量的回归树。 `partykit::ctree()`. 
     - Hothorn, Torsten, Kurt Hornik, and Achim Zeileis. “Ctree: Conditional Inference Trees.” The Comprehensive R Archive Network, 2015, 1–34.
 
-- `Cutoff Finder` - web tool for finding optimal dichotomization with respect to an outcome or survival variable. Five methods. http://molpath.charite.de/cutoff/
+- `Cutoff Finder` - web工具，用于寻找关于结果或生存变量的最优二分法。五个方法. http://molpath.charite.de/cutoff/
     - Budczies, Jan, Frederick Klauschen, Bruno V. Sinn, Balázs Győrffy, Wolfgang D. Schmitt, Silvia Darb-Esfahani, and Carsten Denkert. “Cutoff Finder: A Comprehensive and Straightforward Web Application Enabling Rapid Biomarker Cutoff Optimization.” PloS One 7, no. 12 (2012): e51862. https://doi.org/10.1371/journal.pone.0051862.
 
 
 ## 癌症驱动基因
 
-- Cancer Gene Census (CGC), download [COSMIC](http://cancer.sanger.ac.uk/cosmic/download)
+- Cancer Gene Census (CGC), 下载 [COSMIC](http://cancer.sanger.ac.uk/cosmic/download)
     - Hudson, T. J. et al. International network of cancer genome projects. Nature 464, 993–8 (2010).
     - `data/Census_all*.csv` - [The cancer Gene Census](http://cancer.sanger.ac.uk/census)
-    - `data/COSMIC_genes.txt` - Genes sorted by the number of records associated with them. Obtained using `zcat <CosmicCompleteTargetedScreensMutantExport.tsv.gz | sed '1d' | cut -f1 | sort | uniq -c | sort -k1 -r -n > COSMIC_genes.txt`
-    - `data/CosmicCodingMuts.vcf.gz` - VCF file of all coding mutations in the current release (release v83, 7th November 2017).
+    - `data/COSMIC_genes.txt` - ：根据与之相关的记录数量对基因进行排序。获得使用 `zcat <CosmicCompleteTargetedScreensMutantExport.tsv.gz | sed '1d' | cut -f1 | sort | uniq -c | sort -k1 -r -n > COSMIC_genes.txt`
+    - `data/CosmicCodingMuts.vcf.gz` - VCF file.
 
 - Tumor suppressor gene database (TSGene), https://bioinfo.uth.edu/TSGene/
     - Zhao, M., Sun, J. & Zhao, Z. TSGene: a web resource for tumor suppressor genes. Nucleic Acids Res, 41(Database issue), D970–6 (2013).
     - Download various lists of tumor suppressor genes, https://bioinfo.uth.edu/TSGene/download.cgi
 
-- `OncoScape` - Genes with oncogenic/tumor suppressor/combined scores as a sum contribution from gene expression, somatic mutations, DNA copy-number and methylation as well as data from shRNA knock-down screens. http://oncoscape.nki.nl/
+- `OncoScape` - 致癌基因/抑癌基因/综合得分作为基因表达、体细胞突变、DNA拷贝数和甲基化以及shRNA敲除筛选数据。 http://oncoscape.nki.nl/
     - Schlicker, Andreas, Magali Michaut, Rubayte Rahman, and Lodewyk F. A. Wessels. “OncoScape: Exploring the Cancer Aberration Landscape by Genomic Data Fusion.” Scientific Reports 6 (20 2016): 28103. https://doi.org/10.1038/srep28103.
 
-- `data/Bailey_2018_cancer_genes.xlsx` - Table S1, consensus list of cancer driver genes.
+- `data/Bailey_2018_cancer_genes.xlsx` - Table S1, 癌症驱动基因的一致列表
 	- Bailey, Matthew H., Collin Tokheim, Eduard Porta-Pardo, Sohini Sengupta, Denis Bertrand, Amila Weerasinghe, Antonio Colaprico, et al. “Comprehensive Characterization of Cancer Driver Genes and Mutations.” Cell 173, no. 2 (April 5, 2018): 371-385.e18. https://doi.org/10.1016/j.cell.2018.02.060. - Pan-Cancer mutation analysis. Combined use of 26 tools (https://www.cell.com/cell/fulltext/S0092-8674(18)30237-X#secsectitle0075, description of each tool in Methods) on harmonized data. 299 cancer driver genes, >3,400 putative missense driver mutations. Table S6 - excluded TCGA samples.
 
-- `data/TARGET_db_v3_02142015.xlsx` - TARGET (tumor alterations relevant for genomics-driven therapy) is a database of genes that, when somatically altered in cancer, are directly linked to a clinical action. TARGET genes may be predictive of response or resistance to a therapy, prognostic, and/or diagnostic. https://software.broadinstitute.org/cancer/cga/target
+- `data/TARGET_db_v3_02142015.xlsx` - TARGET(与基因组驱动治疗相关的肿瘤改变)是一个基因数据库，当癌症发生体细胞改变时，这些基因与临床行为直接相关。靶基因可以预测治疗的反应或耐药性、预后和/或诊断 https://software.broadinstitute.org/cancer/cga/target
 
-- `data/Tokheim_2016_cancer_driver_genes.xlsx` - Dataset S2: Predicted driver genes by various number of methods
+- `data/Tokheim_2016_cancer_driver_genes.xlsx` - Dataset S2:用多种方法预测驱动基因
     - Tokheim, Collin J., Nickolas Papadopoulos, Kenneth W. Kinzler, Bert Vogelstein, and Rachel Karchin. “Evaluating the Evaluation of Cancer Driver Genes.” Proceedings of the National Academy of Sciences 113, no. 50 (December 13, 2016): 14330–35. https://doi.org/10.1073/pnas.1616440113. - 20/20+ machine learning method, ratiometric approach to predict cancer driver genes. Performance comparison of other methods, 20/20+, TUSON, OncodriveFML and MutsigCV are the top performers. https://github.com/KarchinLab/2020plus
 
 ## 癌症驱动突变
 
-- `clinvar` -  tools to convert ClinVar data into a tab-delimited flat file, and also provides that resulting tab-delimited flat file. https://github.com/macarthur-lab/clinvar
+- `clinvar` -  将ClinVar数据转换为以制表符分隔的平面文件的工具，还提供了生成的以制表符分隔的文件。 https://github.com/macarthur-lab/clinvar
 
-- `CANCERSIGN` - identifies 3-mer and 5-mer mutational signatures, cluster samples by signatures. Based on Alexandrov method, Non-negative matrix factorization, explanation. Other tools - SomaticSignatures, SigneR, deconstructSigs, compared in Table 1. https://github.com/ictic-bioinformatics/CANCERSIGN
+- `CANCERSIGN` - 识别3-mer和5-mer突变签名，通过签名聚类样本。基于Alexandrov方法，非负矩阵分解处理获得。 compared in Table 1. https://github.com/ictic-bioinformatics/CANCERSIGN
     - Bayati, Masroor, Hamid Reza Rabiee, Mehrdad Mehrbod, Fatemeh Vafaee, Diako Ebrahimi, Alistair Forrest, and Hamid Alinejad-Rokny. “CANCERSIGN: A User-Friendly and Robust Tool for Identification and Classification of Mutational Signatures and Patterns in Cancer Genomes.” BioRxiv, January 1, 2019, 424960. https://doi.org/10.1101/424960.
 
 
 ## 药物
 
-- `CARE` - biomarker identification from interactions of drug target genes with other genes. Multivariate linear modeling with interaction term. Illustrative example of interaction of BRAF mutation and EGFR expression. Sample separation by gene expression correlation with CARE score better predicts survival. Comparison with correlation, elastic net, support vector regression. http://care.dfci.harvard.edu/, download page http://care.dfci.harvard.edu/download/, nls_logsig tool to compute AUC for dose curves.
+- `CARE` - 从药物靶基因与其他基因的相互作用中鉴定生物标志物。具有交互项的多元线性建模。说明BRAF突变与EGFR表达相互作用的例子。基因表达相关性与护理评分的样本分离更能预测生存率。比较相关，支持向量回归. http://care.dfci.harvard.edu/, download page http://care.dfci.harvard.edu/download/, nls_logsig tool to compute AUC for dose curves.
     - Jiang, Peng, Winston Lee, Xujuan Li, Carl Johnson, Jun S. Liu, Myles Brown, Jon Christopher Aster, and X. Shirley Liu. “Genome-Scale Signatures of Gene Interaction from Compound Screens Predict Clinical Efficacy of Targeted Cancer Therapies.” Cell Systems 6, no. 3 (March 2018): 343-354.e5. https://doi.org/10.1016/j.cels.2018.01.009.
 
 
-- `CellMinerCDB` - genomics (gene expression, mutations, copy number, methylation, and protein expression) and pharmacogenomics (drug responses and genomics interplay) analyses of cancer cell lines. Integrates NCI-60, GDSC, CCLE, CTRP, and NCI-SCLC databases built on top of `rcellminer` R package. Correlation and multivariate analyses. Tissue-specific analysis. https://discover.nci.nih.gov/cellminercdb/, 10m video tutorial https://youtu.be/XljXazRGkQ8.
+- `CellMinerCDB` - 癌症细胞系的基因组学(基因表达、突变、拷贝数、甲基化和蛋白质表达)和药物基因组学(药物反应和基因组相互作用)分析。 结合 NCI-60, GDSC, CCLE, CTRP, 和 NCI-SCLC 数据库上建立 `rcellminer` R 包.相关和多元分析。组织分析. https://discover.nci.nih.gov/cellminercdb/,
     - Rajapakse, Vinodh N., Augustin Luna, Mihoko Yamade, Lisa Loman, Sudhir Varma, Margot Sunshine, Francesco Iorio, et al. “CellMinerCDB for Integrative Cross-Database Genomics and Pharmacogenomics Analyses of Cancer Cell Lines.” IScience 10 (December 2018): 247–64. https://doi.org/10.1016/j.isci.2018.11.029.
 
-- `DSigDB` - drug-gene signature database. D1 (approved drugs), D2 (kinase inhibitors), D3 (perturbagent signatures), D4 (computational predictions). Download, online. http://tanlab.ucdenver.edu/DSigDB/DSigDBv1.0/download.html
+- `DSigDB` - drug-gene 数据库. D1(批准药物)，D2(激酶抑制剂)，D3(微扰剂标记)，D4(计算预测). 下载及在线. http://tanlab.ucdenver.edu/DSigDB/DSigDBv1.0/download.html
     - Yoo, Minjae, Jimin Shin, Jihye Kim, Karen A. Ryall, Kyubum Lee, Sunwon Lee, Minji Jeon, Jaewoo Kang, and Aik Choon Tan. “DSigDB: Drug Signatures Database for Gene Set Analysis: Fig. 1.” Bioinformatics 31, no. 18 (September 15, 2015): 3069–71. https://doi.org/10.1093/bioinformatics/btv313.
 
-- `GDA` - Genomics and Drugs integrated Analysis. The Genomics and Drugs integrated Analysis portal (GDA) is a web-based tool that combines NCI60 uniquely large number of drug sensitivity data with CCLE and NCI60 gene mutation and expression profiles. Gene-to-drug and reverse analysis. http://gda.unimore.it/
+- `GDA` - 基因组学与药物综合分析. The Genomics and Drugs integrated Analysis portal (GDA) is 是一个基于web的工具集合 NCI60和CCLE基因突变和表达谱的药物敏感性数据。 基因到药物和反向分析. http://gda.unimore.it/
 
-- `OncoKB` - OncoKB cancer gene database, different levels of evidence, fully downloadable. http://oncokb.org
+- `OncoKB` - 癌基因数据库，不同水平的证据，完全可下载. http://oncokb.org
     - Chakravarty, Debyani, Jianjiong Gao, Sarah M. Phillips, Ritika Kundra, Hongxin Zhang, Jiaojiao Wang, Julia E. Rudolph, et al. “OncoKB: A Precision Oncology Knowledge Base.” JCO Precision Oncology 2017 (July 2017).
 
-- `CancerRxGene` - Drug-gene targets. Lots of drug sensitivity information. http://www.cancerrxgene.org/
+- `CancerRxGene` - Drug-gene 目标. 很多药物敏感信息. http://www.cancerrxgene.org/
     - Yang, Wanjuan, Jorge Soares, Patricia Greninger, Elena J. Edelman, Howard Lightfoot, Simon Forbes, Nidhi Bindal, et al. “Genomics of Drug Sensitivity in Cancer (GDSC): A Resource for Therapeutic Biomarker Discovery in Cancer Cells.” Nucleic Acids Research 41, no. Database issue (January 2013): D955-961. https://doi.org/10.1093/nar/gks1111.
 
-- `CTRP` - The Cancer Therapeutics Response Portal (CTRP) links genetic, lineage, and other cellular features of cancer cell lines to small-molecule sensitivity with the goal of accelerating discovery of patient-matched cancer therapeutics. https://portals.broadinstitute.org/ctrp/
+- `CTRP` - The Cancer Therapeutics Response Portal (CTRP) 加速发现与病人相匹配的癌症疗法的目标。. https://portals.broadinstitute.org/ctrp/
 
-- Drug combination screen, synergy. Statistics for the analysis of large-scale drug screens, 108 drugs, 40 cell lines. Bliss independence model description. Bliss-based linear model to evaluate viabilities for individual drugs. Web-interface: http://www.cmtlab.org:3000/combo_app.html. Code to reproduce the analysis: https://github.com/arnaudmgh/synergy-screen. Raw data: https://raw.githubusercontent.com/arnaudmgh/synergy-screen/master/data/rawscreen.csv
+- 药物联合筛选，协同作用。统计分析用于大型药物筛选，108种药物，40个细胞株。独立模型描述。Bliss-based 线性模型来评估单个药物的生存能力. Web: http://www.cmtlab.org:3000/combo_app.html. Code 分析: https://github.com/arnaudmgh/synergy-screen. 原始数据: https://raw.githubusercontent.com/arnaudmgh/synergy-screen/master/data/rawscreen.csv
     - Amzallag, Arnaud, Sridhar Ramaswamy, and Cyril H. Benes. “Statistical Assessment and Visualization of Synergies for Large-Scale Sparse Drug Combination Datasets.” BMC Bioinformatics 20, no. 1 (December 2019). https://doi.org/10.1186/s12859-019-2642-7.
 
 
 
 ## 数据
 
-- `UCSCXenaTools` - An R package downloading and exploring data from UCSC Xena data hubs. CRAN: https://cran.r-project.org/web/packages/UCSCXenaTools/, GitHub: https://github.com/ShixiangWang/UCSCXenaTools, https://shixiangwang.github.io/UCSCXenaTools/
+- `UCSCXenaTools` - 一个从UCSC Xena数据中心下载和研究数据的R包. CRAN: https://cran.r-project.org/web/packages/UCSCXenaTools/, GitHub: https://github.com/ShixiangWang/UCSCXenaTools, https://shixiangwang.github.io/UCSCXenaTools/
 
-- BREAST CANCER LANDSCAPE RESOURCE, A web portal to proteomics, transcriptomics, genomics and metabolomics of breast cancer. Downloada http://www.breastcancerlandscape.org/
+- 乳腺癌全基因组资源，一个门户网站的蛋白质组学，转录组学，基因组学和代谢组学的乳腺癌. 下载 http://www.breastcancerlandscape.org/
     - Consortia Oslo Breast Cancer Research Consortium (OSBREAC), Henrik J. Johansson, Fabio Socciarelli, Nathaniel M. Vacanti, Mads H. Haugen, Yafeng Zhu, Ioannis Siavelis, et al. “Breast Cancer Quantitative Proteome and Proteogenomic Landscape.” Nature Communications 10, no. 1 (December 2019): 1600. https://doi.org/10.1038/s41467-019-09018-y. - Proteogenomics of breast cancer subtypes. ~10K proteins by LS-MS/MS. 9 samples for each of the five PAM50 subtypes. Protein expression partially recapitulates PAM50 subtypes, their own consensus clustering. High correlation with mRNA, less so for CNV. Correlation of 290 proteins that are FDA-approved drug targets. Online tool, http://www.breastcancerlandscape.org/, supplementary Data 1 has the full protein expression matrix,https://www.nature.com/articles/s41467-019-09018-y#Sec15
 
-- `Refine.bio` harmonizes petabytes of publicly available biological data into ready-to-use datasets for cancer researchers and AI/ML scientists. https://www.refine.bio/. Documentation, http://docs.refine.bio/en/latest/, GitHub, https://github.com/AlexsLemonade/refinebio.
+- `Refine.bio` 将公开可用的pb级生物数据协调为癌症研究人员和AI/ML科学家的现成数据集. https://www.refine.bio/. Documentation, http://docs.refine.bio/en/latest/, GitHub, https://github.com/AlexsLemonade/refinebio.
 
-- Zehir, Ahmet, Ryma Benayed, Ronak H Shah, Aijazuddin Syed, Sumit Middha, Hyunjae R Kim, Preethi Srinivasan, et al. “Mutational Landscape of Metastatic Cancer Revealed from Prospective Clinical Sequencing of 10,000 Patients.” Nature Medicine 23, no. 6 (May 8, 2017): 703–13. https://doi.org/10.1038/nm.4333. - MSK-IMPACT study. Deep sequencing of 341-410 genes in 10,000 samples in multiple cancers. Focus on mutations, copy number alterations, fusions. Data at http://www.cbioportal.org/study?id=msk_impact_2017#summary, downloadable, includes clinical data for survival analysis.
+- Zehir, Ahmet, Ryma Benayed, Ronak H Shah, Aijazuddin Syed, Sumit Middha, Hyunjae R Kim, Preethi Srinivasan, et al. “Mutational Landscape of Metastatic Cancer Revealed from Prospective Clinical Sequencing of 10,000 Patients.” Nature Medicine 23, no. 6 (May 8, 2017): 703–13. https://doi.org/10.1038/nm.4333. - MSK-IMPACT study. 多种癌症样本中341-410基因的深度测序。突变，拷贝数改变，融合。 数据 http://www.cbioportal.org/study?id=msk_impact_2017#summary, downloadable, includes clinical data for survival analysis.
 
-- Gendoo, Deena M.A., Michael Zon, Vandana Sandhu, Venkata Manem, Natchar Ratanasirigulchai, Gregory M. Chen, Levi Waldron, and Benjamin Haibe-Kains. “MetaGxData: Clinically Annotated Breast, Ovarian and Pancreatic Cancer Datasets and Their Use in Generating a Multi-Cancer Gene Signature,” November 12, 2018. https://doi.org/10.1101/052910. - MetaGxData package containing breast and ovarian cancer data, microarray- and RNA-seq gene expression and clinical annotations. Scripts to conduct genome-wide survival analysis for all genes. https://github.com/bhklab/MetaGxData 
+- Gendoo, Deena M.A., Michael Zon, Vandana Sandhu, Venkata Manem, Natchar Ratanasirigulchai, Gregory M. Chen, Levi Waldron, and Benjamin Haibe-Kains. “MetaGxData: Clinically Annotated Breast, Ovarian and Pancreatic Cancer Datasets and Their Use in Generating a Multi-Cancer Gene Signature,” November 12, 2018. https://doi.org/10.1101/052910. - 包含乳腺癌和卵巢癌数据、矩阵数据和RNA-seq基因表达和临床注释数据在MetaGxData包。用于对所有基因进行全基因组生存分析的脚本。 https://github.com/bhklab/MetaGxData 
 
-- `DepMap` - Large-scale RNAi screen for cancer vulnerability genes in 501 cell lines from 20 cancers, shRNA silencing ~17,000 genes. DEMETER - Modeling and removal of shRNA off-target effects. 6 sigma cutoff of DEMETER scores to identify 769 differential gene dependencies. ATLANTIS model to predict other genes - MDPs, marker dependency pairs. Main data portal: https://depmap.org/portal/download/
+- `DepMap` - 大规模RNAi筛选20种癌症501个细胞系的癌症易感基因，shRNA沉默约17000个基因。数据未知: https://depmap.org/portal/download/
     - Tsherniak, Aviad, Francisca Vazquez, Phil G. Montgomery, Barbara A. Weir, Gregory Kryukov, Glenn S. Cowley, Stanley Gill, et al. “Defining a Cancer Dependency Map.” Cell 170, no. 3 (July 2017): 564-576.e16. https://doi.org/10.1016/j.cell.2017.06.010. [Supplemental tables](https://www.sciencedirect.com/science/article/pii/S0092867417306517?via%3Dihub#app2), `DepMap_TableS3_DependencyCorrelation.csv` - Table S3. Gene Dependency-Dependency Correlations, pairs of genes essential for proliferation/viability. Columns: Gene symbol 1, Gene symbol 2, correlation (r), z_score. [Source](https://ars.els-cdn.com/content/image/1-s2.0-S0092867417306517-mmc3.csv)
 
-- `CCLE2 data` - CCLE characterization using sequencing technologies. Data described: RNA splicing, DNA methylation, Histone modification, miRNA expression, RPPA for 1072 cells. Data availability: https://portals.broadinstitute.org/ccle/data, https://depmap.org/portal/download/
+- `CCLE2 data` - 。数据描述:RNA剪接，DNA甲基化，组蛋白修饰，miRNA表达，1072个细胞的RPPA。: https://portals.broadinstitute.org/ccle/data, https://depmap.org/portal/download/
     - Ghandi, Mahmoud, Franklin W. Huang, Judit Jané-Valbuena, Gregory V. Kryukov, Christopher C. Lo, E. Robert McDonald, Jordi Barretina, et al. “Next-Generation Characterization of the Cancer Cell Line Encyclopedia.” Nature, May 8, 2019. https://doi.org/10.1038/s41586-019-1186-3.
 
 
 ### TCGA PanCancer
 
-- ATAC-seq data in 410 tumor samples from TCGA (23 cancer types). Correlation with gene expression predicts distal interactions. 18 clusters by cancer type. Data: hg19 coordinates of pan-cancer and BRCA-specific ATAC-seq peaks (Data S2), eQTLs (Data S5), peak-to-gene and enhancer-to-gene links (Data S7), and more https://gdc.cancer.gov/about-data/publications/ATACseq-AWG 
+- ATAC-seq数据来自TCGA(23种癌症类型)的410个肿瘤样本。与基因表达的相关性预测远端相互作用。按癌症类型划分的18个集群。数据:  https://gdc.cancer.gov/about-data/publications/ATACseq-AWG 
     - Corces, M. Ryan, Jeffrey M. Granja, Shadi Shams, Bryan H. Louie, Jose A. Seoane, Wanding Zhou, Tiago C. Silva, et al. “The Chromatin Accessibility Landscape of Primary Human Cancers.” Edited by Rehan Akbani, Christopher C. Benz, Evan A. Boyle, Bradley M. Broom, Andrew D. Cherniack, Brian Craft, John A. Demchok, et al. Science 362, no. 6413 (2018). https://doi.org/10.1126/science.aav1898.
 
-- Papers and supplementary data from PanCancer publications. Clinical annotations, RNA-seq counts, RPPA, Methylation, miRNA, copy number, mutations in .maf format. https://gdc.cancer.gov/about-data/publications/pancanatlas
+- 来自PanCancer出版物的论文和补充数据。临床注释、RNA-seq计数、RPPA、甲基化、miRNA、拷贝数、.maf格式突变. https://gdc.cancer.gov/about-data/publications/pancanatlas
     - Ding, Li, Matthew H. Bailey, Eduard Porta-Pardo, Vesteinn Thorsson, Antonio Colaprico, Denis Bertrand, David L. Gibbs, et al. “Perspective on Oncogenic Processes at the End of the Beginning of Cancer Genomics.” Cell 173, no. 2 (April 5, 2018): 305-320.e10. https://doi.org/10.1016/j.cell.2018.03.033. - An overview of PanCancer Atlas.
 
-- The Pan-Cancer analysis by TCGA consortium, all papers. https://www.cell.com/pb-assets/consortium/pancanceratlas/pancani3/index.html
+- 泛癌分析由TCGA联合发表，全部论文. https://www.cell.com/pb-assets/consortium/pancanceratlas/pancani3/index.html
 
-- TCGA MC3 variant calling project. Eight variant callers. Protocols for filtering samples, variants. Public and controlled access MAF files at https://gdc.cancer.gov/about-data/publications/mc3-2017
-    - Ellrott, Kyle, Matthew H. Bailey, Gordon Saksena, Kyle R. Covington, Cyriac Kandoth, Chip Stewart, Julian Hess, et al. “Scalable Open Science Approach for Mutation Calling of Tumor Exomes Using Multiple Genomic Pipelines.” Cell Systems 6, no. 3 (March 2018): 271-281.e7. https://doi.org/10.1016/j.cels.2018.03.002.
 
-- `PCAGW` - The PCAWG study is an international collaboration to identify common patterns of mutation in more than 2,800 cancer whole genomes from the International Cancer Genome Consortium. The project produced large amount data with many types including simple somatic mutations (SNVs, MNVs and small INDELs), large-scale somatic structural variations, copy number alterations, germline variations, RNA expression profiles, gene fusions, and phenotypic annotations etc. PCAWG data have been imported, processed and made available in the following four major online resources for download and exploration by the cancer researchers worldwide. http://docs.icgc.org/pcawg/
+- `PCAGW` - PCAWG研究是一项国际合作，旨在确定来自国际癌症基因组联盟的2800多个癌症全基因组的常见突变模式。该项目产生了大量类型多样的数据，包括简单的体细胞突变(SNVs、MNVs和小indel)、大规模的体细胞结构变异、拷贝数改变、种系变异、RNA表达谱、基因融合、表型注释等。PCAWG数据已被导入、处理并提供给以下四种主要的在线资源供全球癌症研究人员下载和探索。 http://docs.icgc.org/pcawg/
     - Goldman, Mary, Junjun Zhang, Nuno A. Fonseca, Qian Xiang, Brian Craft, Elena Piñeiro, Brian O’Connor, et al. “Online Resources for PCAWG Data Exploration, Visualization, and Discovery.” BioRxiv, October 18, 2017. https://doi.org/10.1101/163907. https://www.biorxiv.org/content/early/2017/10/18/163907
 
 
 ## 甲基化
 
-- `MEXPRESS` - Gene-centric methylation and correlation with clinical parameters. http://mexpress.be/
+- `MEXPRESS` - 基因中心甲基化与临床参数的关系. http://mexpress.be/
 
-- `Pancan-meQTL` database of meQTLs across 23 TCGA cancer types. Cis-, trans-meQTLs, pancancer-meQTLs, survival meQTLs. SNP-, gene-, CpG-centric search for each cancer. Visualization, KM plots for survival. Download. http://bioinfo.life.hust.edu.cn/Pancan-meQTL/
+- `Pancan-meQTL` 23种TCGA癌症类型的meQTLs数据库 Cis-, trans-meQTLs, pancancer-meQTLs, survival meQTLs. SNP-, gene-, CpG-centric 对于不同癌症类型. 图例, KM-survival图. Download. http://bioinfo.life.hust.edu.cn/Pancan-meQTL/
     - Gong, Jing, Hao Wan, Shufang Mei, Hang Ruan, Zhao Zhang, Chunjie Liu, An-Yuan Guo, Lixia Diao, Xiaoping Miao, and Leng Han. “Pancan-MeQTL: A Database to Systematically Evaluate the Effects of Genetic Variants on Methylation in Human Cancer.” Nucleic Acids Research, September 7, 2018. https://doi.org/10.1093/nar/gky814.
 
-
-## Misc
-
--  SMAP is a pipeline for the process of xenografts sequencing data. It takes FASTQ as input and outputs specie-specific BAM or gene counts. https://github.com/cit-bioinfo/SMAP
 
