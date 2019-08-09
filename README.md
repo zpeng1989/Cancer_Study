@@ -8,6 +8,7 @@
   * [免疫细胞分析](#免疫细胞分析)
   * [BRCA](#brca)
   * [TCGA泛癌肿](#tcga泛癌肿)
+  * [图像分析](#图像分析)
   * [克隆分析](#克隆分析)
 * [生存分析](#生存分析)
   * [查找生存分析最佳分割点](#查找生存分析最佳分割点)
@@ -63,17 +64,17 @@
 
 
 
->## 图片分析
+## 图片分析
 
->- `DeepPATH` - 利用深卷积神经网络对肺癌图像进行分类。按肿瘤类型、突变类型分类。参考其他使用深度学习的图像分类研究。GoogleNet inception v3架构。培训、验证、测试团队(70%、15%、15%)。图像处理的细节。 https://github.com/ncoudray/DeepPATH
+- `DeepPATH` - 利用深卷积神经网络对肺癌图像进行分类。按肿瘤类型、突变类型分类。参考其他使用深度学习的图像分类研究。GoogleNet inception v3架构。培训、验证、测试团队(70%、15%、15%)。图像处理的细节。 https://github.com/ncoudray/DeepPATH
 
->- Coudray, Nicolas, Paolo Santiago Ocampo, Theodore Sakellaropoulos, Navneet Narula, Matija Snuderl, David Fenyö, Andre L. Moreira, Narges Razavian, and Aristotelis Tsirigos. “Classification and Mutation Prediction from Non–Small Cell Lung Cancer Histopathology Images Using Deep Learning.” Nature Medicine 24, no. 10 (October 2018): 1559–67. https://doi.org/10.1038/s41591-018-0177-5.
-
-
->- `IHCount` - IHC-分析软件, https://github.com/mui-icbi/IHCount
+- Coudray, Nicolas, Paolo Santiago Ocampo, Theodore Sakellaropoulos, Navneet Narula, Matija Snuderl, David Fenyö, Andre L. Moreira, Narges Razavian, and Aristotelis Tsirigos. “Classification and Mutation Prediction from Non–Small Cell Lung Cancer Histopathology Images Using Deep Learning.” Nature Medicine 24, no. 10 (October 2018): 1559–67. https://doi.org/10.1038/s41591-018-0177-5.
 
 
->- `pathology_learning` - 利用传统的机器学习和深度学习方法对TCGA病理切片进行预测。 [https://github.com/millett/pathology_learning](https://github.com/millett/pathology_learning)
+- `IHCount` - IHC-分析软件, https://github.com/mui-icbi/IHCount
+
+
+- `pathology_learning` - 利用传统的机器学习和深度学习方法对TCGA病理切片进行预测。 [https://github.com/millett/pathology_learning](https://github.com/millett/pathology_learning)
 
 ## 克隆分析
 
